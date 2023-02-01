@@ -1,0 +1,40 @@
+<?php
+return [
+    'BE' => [
+        'explicitADmode' => 'explicitAllow',
+    ],
+    'DB' => [
+        'Connections' => [
+            'Default' => [
+                'charset' => 'utf8',
+                'driver' => 'mysqli',
+
+            ],
+        ],
+    ],
+    'EXTENSIONS' => [
+        'backend' => [
+            'backendFavicon' => '',
+            'backendLogo' => '',
+            'loginBackgroundImage' => '',
+            'loginFootnote' => '',
+            'loginHighlightColor' => '',
+            'loginLogo' => '',
+            'loginLogoAlt' => '',
+        ],
+        'extensionmanager' => [
+            'automaticInstallation' => '1',
+            'offlineMode' => '0',
+        ],
+    ],
+    'FE' => [
+        'disableNoCacheParameter' => true,
+    ],
+    'SYS' => [
+        'encryptionKey' => '3faea1e26901b2fb717125c4d6c6e90fc37173f26f0893dc2374300ea413891efd4d13f462a1e12ca2e816fab915faf2',
+        'features' => [
+            'yamlImportsFollowDeclarationOrder' => true,
+        ],
+        'sitename' => 'New TYPO3 site',
+    ],
+];
