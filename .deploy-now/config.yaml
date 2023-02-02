@@ -7,7 +7,10 @@ deploy:
   # configure the initial deployment of each branch
   bootstrap:
     # directories that are not overwritten or removed by the next deployment
-    #excludes:
+    excludes:
+      - DOCKER_ENV
+      - docker_tag
+      - output.log
 
     # commands that are executed on the runtime after new files are copied
     post-deployment-remote-commands:
