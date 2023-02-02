@@ -15,6 +15,7 @@ deploy:
     # commands that are executed on the runtime after new files are copied
     post-deployment-remote-commands:
       # set right file permissions for Laravel
+      - find $(pwd) -type f -not -path "$(pwd)/logs/*" -exec chmod 664 {} \;
       - vendor/bin/typo3cms install:setup
 
   # configure all following deployments of each branch
