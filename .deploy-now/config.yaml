@@ -19,12 +19,16 @@ deploy:
       - vendor/bin/typo3cms install:setup
 
   # configure all following deployments of each branch
-  #recurring:
+  recurring:
     # directories that are not overwritten or removed by the next deployment
-    #excludes:
+    excludes:
+      - DOCKER_ENV
+      - docker_tag
+      - output.log
 
     # commands that are executed on the runtime before new files are copied
     #pre-deployment-remote-commands:
 
     # commands that are executed on the runtime after new files are copied
-    #post-deployment-remote-commands:
+    post-deployment-remote-commands:
+      - vendor/bin/typo3cms install:setup
