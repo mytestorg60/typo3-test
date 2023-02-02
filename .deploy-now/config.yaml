@@ -2,7 +2,7 @@ version: 1.0
 deploy:
   # comment in one of the following lines to force the use of the recurring or bootstrap configuration
   #  force: recurring
-  force: bootstrap
+  #  force: bootstrap
 
   # configure the initial deployment of each branch
   bootstrap:
